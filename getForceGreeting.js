@@ -65,7 +65,7 @@ function getRhymeSuffix(str) {
   return substr === 'eighth' ? substr : substr.replace(/e?([^aeiou])+/, '');
 }
 
-function getGreeting(date) {
+function getForceGreeting(date) {
   const dayName = getDayName(date);
   return (
     capitalize(getMonthName(date)) +
